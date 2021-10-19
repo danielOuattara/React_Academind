@@ -13,10 +13,9 @@ class App extends React.Component {
     alert("Hello !")
   }
 
-  onChangeLinkName(newName) {
+  changeLinkName(newName) {
     this.setState({ homeLink: newName })
   }
-
 
   render() {
     return (
@@ -33,8 +32,8 @@ class App extends React.Component {
               name={"Daniel"} 
               initialAge={37} 
               greet={ this.onGreet  } 
-              onChangeLink={ this.onChangeLinkName.bind(this) }
-              initialLinkName= { this.state.homeLink } />
+              changeLink={ this.changeLinkName.bind(this) }
+              initialLinkName= {this.state.homeLink} />
           </div>
         </div>
       </div>

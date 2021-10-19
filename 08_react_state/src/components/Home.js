@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 export class Home extends React.Component {
 
     constructor(props) {
-        super();
+        super(props);
         this.state = {
             age: props.initialAge,
             status: 0
@@ -14,7 +14,7 @@ export class Home extends React.Component {
         this.setState({
             age: this.state.age + 1
         });
-        console.log(this.age)
+        console.log(this.state.age)
     }
     render() {
         return (

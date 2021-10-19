@@ -19,6 +19,10 @@ export class Home extends React.Component {
                 <hr />
                 <button className="btn btn-primary" onClick={this.onMakeOlder.bind(this)}>Make me older</button>
                 <button className="btn btn-dark" onClick={()=> this.onMakeOlder()}>Make me older</button>
+                {/* 
+                   Nothing happens on click: 
+                     1- the state of the component has not changed
+                     2- nothing is rendered again,  */}
             </div>
         );
     }

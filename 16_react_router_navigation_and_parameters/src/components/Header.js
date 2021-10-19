@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 
 // component whithout state : the best is stateless component
 export const Header = (props) =>{
@@ -8,9 +8,9 @@ export const Header = (props) =>{
             <div className="container">
                 <div className="navbar-header">
                     <ul className="nav navbar-nav">
-                        <li>
-                            <a href="/">{ props.homeLink }</a>
-                        </li>
+                        {/* <li><Link to="/">Root</Link></li> */}
+                        <li><Link to="/home" style={{color: "white",backgroundColor:"grey"}}>Home</Link></li>
+                        <li><Link to="/user/">User</Link></li>
                     </ul>
                 </div>
             </div>

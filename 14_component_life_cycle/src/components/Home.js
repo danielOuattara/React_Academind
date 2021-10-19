@@ -20,35 +20,35 @@ export class Home extends React.Component {
     //------------------------------------------------------------
 
     componentWillMount() {
-        return alert("Component will mount !");
+        console.log("Component will mount !");
     }
 
     componentDidMount() {
-        return alert("Component did mount !");
+        console.log("Component did mount !");
     }
 
     componentWillReceiveProps(nextProps) {
-        return alert("Component will receive props !", nextProps);
+        console.log("Component will receive props !", nextProps);
     }
 
     shouldComponentUpdate(nextProps, nextState) {
-        alert(" Should component update !", nextProps, nextState);
+        console.log(" Should component update !", nextProps, nextState);
         return true;
     }
 
     componentWillUpdate(nextProps, nextState) {
-        alert("Component will update !", nextProps, nextState);
+        console.log("Component will update !", nextProps, nextState);
         // if(nextState.status === 1 ) {
         //   return true
         // }
     }
 
     componentDidUpdate(prevProps, prevState) {
-        alert("Component did update !", prevProps, prevState);
+        console.log("Component did update !", prevProps, prevState);
     }
 
     componentWillUnmount() {
-        alert("Component Will unmount !")
+        console.log("Component Will unmount !")
     }
 
 

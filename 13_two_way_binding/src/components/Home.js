@@ -23,14 +23,14 @@ export class Home extends React.Component {
         });
     }
 
-    onChangeLink = () => {
-        this.props.onChangeLink(this.state.homeLink);
-    }
-
     onHandleChange(event) {
-        this.setState({ homeLink: event.target.value })
-
+        this.setState({ homeLink: event.target.value });
     }
+
+    onChangeLink = () => {
+        this.props.changeLink(this.state.homeLink);
+    }
+
 
     render() {
         return (
@@ -39,14 +39,26 @@ export class Home extends React.Component {
                 <p>Your name is { this.props.name }, your age is {this.state.age} y.o</p>
                 <p> Status: { this.state.status }</p>
                 <hr />
+
                 <button className="btn btn-primary" onClick={ this.onMakeOlder.bind(this) }>Make me older</button>
                 <button className="btn btn-dark" onClick={ ()=> this.onMakeOlder() }>Make me older</button>
                 <hr />
+
                 <button className="btn btn-primary" onClick={ this.props.greet } >Greet</button>
                 <hr />
-                <input type="text" value={ this.state.homeLink } 
-                       onChange={ (event) => this.onHandleChange(event) } />
-                <button onClick={ this.onChangeLink} className="btn btn-primary">Change Header Link</button>
+
+                <input 
+                    type="text" 
+                    style={{marginLeft:"40px", display:"inline"}} 
+                    value={this.state.homeLink} 
+                    onChange={ (event) => this.onHandleChange(event) } 
+                />
+                <button 
+                    style={{marginRight:"40px"}} 
+                    onClick={this.onChangeLink} 
+                    className="btn btn-primary"
+                    >Change Header Link
+                </button>
 
             </div>
         );

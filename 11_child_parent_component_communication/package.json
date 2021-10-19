@@ -1,5 +1,5 @@
 {
-  "name": "03_first_component",
+  "name": "11_child_to_parent_communication",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

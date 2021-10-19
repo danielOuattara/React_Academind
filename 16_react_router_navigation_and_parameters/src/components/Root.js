@@ -12,11 +12,11 @@ export default class Root extends React.Component {
                 </div>
                 <hr />
 
-                {/* <div className="row">
+                <div className="row">
                     <div className="col-xs-10 col-xs-offset-1">
-                        {this.props.children}  Home comp. rendered here !
+                        {this.props.children}  
                     </div>
-                </div> */}
+                </div>
             </div>
         );
     }

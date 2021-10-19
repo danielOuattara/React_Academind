@@ -3,9 +3,12 @@ import PropTypes from "prop-types";
 export class Home extends React.Component {
     render() {
         console.log(this.props);
+        console.log(this.props.children);
         let text = "A something text";
         return (
             <div>
+                <h2>{this.props.admin}</h2>
+                <h2>{this.props.spouse}</h2>
                 <p>I am a new component</p>
                 <p>{text}</p>
                 <p>Your name is {this.props.name}, your age is {this.props.age} y.o</p>
@@ -28,5 +31,5 @@ Home.protoType = {
     age: PropTypes.number, 
     user: PropTypes.object,
     children: PropTypes.element.isRequired
-}
+};
 

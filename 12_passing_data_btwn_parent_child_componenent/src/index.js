@@ -1,22 +1,23 @@
 import React from 'react';
-import  {render} from 'react-dom';
-import  { Header }  from "./components/Header.js";
+import {render} from 'react-dom';
+import { Header }  from "./components/Header.js";
 import { Home }  from "./components/Home.js";
 
 class App extends React.Component {
   constructor() {
     super();
-    this.state = { homeLink: "Home" }
+    this.state = { 
+      homeLink: "Home" 
+    }
   }
 
   onGreet() {
     alert("Hello !")
   }
 
-  onChangeLinkName(newName) {
+  changeLinkName(newName) {
     this.setState({ homeLink: newName })
   }
-
 
   render() {
     return (
@@ -33,7 +34,7 @@ class App extends React.Component {
               name={"Daniel"} 
               initialAge={37} 
               greet={ this.onGreet  } 
-              onChangeLink={this.onChangeLinkName.bind(this)} />
+              changeLink={this.changeLinkName.bind(this)} />
           </div>
         </div>
       </div>

@@ -8,7 +8,7 @@ export class Header extends React.Component {
                     <div className="navbar-header">
                         <ul className="nav navbar-nav">
                             <li>
-                                <a href="#">Home</a>
+                                <a href="/">Home</a>
                             </li>
                         </ul>
                     </div>
