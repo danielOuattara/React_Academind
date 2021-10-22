@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 // component whithout state : the best is stateless component
-export const Header = (props) =>{
+export const Header = () =>{
     return (
         <nav className="navbar navbar-default">
             <div className="container">

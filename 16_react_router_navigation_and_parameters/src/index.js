@@ -9,11 +9,11 @@ class App extends React.Component {
   render() {
     return (
       <BrowserRouter>
-            <Route path="/" component={Root} />
+            <Route exact path="/" component={Root} />
             <Route path ="/user/:id" component={User} />
             <Route path ="/home" component={Home} />
       </BrowserRouter> 
-    )
+    );
   }
 }
 
