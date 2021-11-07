@@ -9,7 +9,7 @@ export class Home extends React.Component {
             status: 0
         };
 
-        setTimeout( () => {
+        setTimeout(() => {
             this.setState({
                 status: 1
             })
